@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Colors
+:root {
+  --dark: #071e3d;
+  --blue1: #1f4287;
+  --blue2: #0c5eaf;
+  --light: #21e6c1;
+  --red: rgb(146, 18, 18);
+}
+
+//Responsive sizes
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1280px;
+
+@import "./home";
+@import "./dishInfo";
+@import "./order";
