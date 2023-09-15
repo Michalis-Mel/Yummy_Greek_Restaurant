@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { dishesArray } from "../db.js";
 
-function Menu() {
+function Menu({ addOrder }) {
   return (
     <div className="menu">
       <div className="row">
@@ -25,7 +25,9 @@ function Menu() {
                     <NavLink to={`/dish/${dish.name}`} className="more">
                       More Information
                     </NavLink>
-                    <button className="add">ADD</button>
+                    <button onClick={() => addOrder(dish.id)} className="add">
+                      ADD
+                    </button>
                   </div>
                 </div>
               </div>

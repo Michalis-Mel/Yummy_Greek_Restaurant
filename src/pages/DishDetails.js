@@ -3,10 +3,10 @@ import { useParams, NavLink } from "react-router-dom";
 
 import { dishesArray } from "../db.js";
 
-const DishDetails = () => {
+const DishDetails = ({ addOrder }) => {
   const url = useParams();
   const [dish, setDish] = useState(dishesArray[0]);
-  const [dishes, setDishes] = useState(dishesArray);
+  const [dishes] = useState(dishesArray);
 
   useEffect(() => {
     const currentDish = dishes.filter((myDish) => myDish.name === url.id);
@@ -46,7 +46,9 @@ const DishDetails = () => {
             </div>
           )}
           <div className="dishDetails_links">
-            <button className="add">Add to your order</button>
+            <button onClick={() => addOrder(dish.id)} className="add">
+              Add to your order
+            </button>
             <NavLink to="/" className="back">
               Back
             </NavLink>
