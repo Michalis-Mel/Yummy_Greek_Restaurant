@@ -17,10 +17,7 @@ export const dishesArray = [
       "Nutmeg",
       "Béchamel sauce",
     ],
-    tags: {
-      dietaryPreferences: ["vegan", "gluten-free"],
-      allergens: ["contains-nuts", "contains-gluten"],
-    },
+    tags: ["vegan", "gluten-free", "contains-nuts", "contains-gluten"],
   },
   {
     id: 2,
@@ -39,10 +36,7 @@ export const dishesArray = [
       "Fresh oregano",
       "Red wine vinegar",
     ],
-    tags: {
-      dietaryPreferences: ["vegetarian", "lactose-free"],
-      allergens: [],
-    },
+    tags: ["vegetarian", "lactose-free"],
   },
   {
     id: 3,
@@ -52,10 +46,7 @@ export const dishesArray = [
     price: 12.99,
     image: "https://placehold.co/400x300?text=Souvlaki",
     ingredients: ["Marinated chicken or pork", "Pita bread", "Tzatziki sauce"],
-    tags: {
-      dietaryPreferences: ["lactose-free"],
-      allergens: [],
-    },
+    tags: ["lactose-free"],
   },
   {
     id: 4,
@@ -70,10 +61,7 @@ export const dishesArray = [
       "Feta cheese",
       "Aromatic herbs",
     ],
-    tags: {
-      dietaryPreferences: ["vegetarian"],
-      allergens: [],
-    },
+    tags: ["vegetarian"],
   },
   {
     id: 5,
@@ -83,10 +71,7 @@ export const dishesArray = [
     price: 7.99,
     image: "https://placehold.co/400x300?text=Tzatziki",
     ingredients: ["Yogurt", "Grated cucumber", "Garlic", "Herbs"],
-    tags: {
-      dietaryPreferences: ["vegetarian", "lactose-free"],
-      allergens: [],
-    },
+    tags: ["vegetarian", "lactose-free"],
   },
   {
     id: 6,
@@ -101,10 +86,7 @@ export const dishesArray = [
       "Aromatic herbs",
       "Lemon sauce",
     ],
-    tags: {
-      dietaryPreferences: ["vegan", "gluten-free"],
-      allergens: [],
-    },
+    tags: ["vegan", "gluten-free"],
   },
   {
     id: 7,
@@ -120,10 +102,7 @@ export const dishesArray = [
       "Artichoke hearts",
       "Feta cheese",
     ],
-    tags: {
-      dietaryPreferences: ["vegetarian"],
-      allergens: ["contains-gluten"],
-    },
+    tags: ["vegetarian", "contains-gluten"],
   },
   {
     id: 8,
@@ -133,10 +112,7 @@ export const dishesArray = [
     price: 18.99,
     image: "https://placehold.co/400x300?text=Grilled+Octopus",
     ingredients: ["Grilled octopus", "Lemon", "Olive oil"],
-    tags: {
-      dietaryPreferences: [],
-      allergens: [],
-    },
+    tags: [],
   },
   {
     id: 9,
@@ -144,9 +120,9 @@ export const dishesArray = [
     description:
       "Saganaki is a delightful Greek appetizer featuring flaming cheese. Typically, a slice of cheese (often Kefalotyri, Graviera, or Halloumi) is dredged in flour, pan-fried, and then set ablaze at the table with the help of some brandy. The result is a gooey, slightly crispy, and deliciously cheesy dish that's served with a squeeze of lemon and bread.",
     price: 11.99,
-    tags: ["vegan", "gluten-free", "contains-nuts", "contains-gluten"],
     ingredients: ["Cheese", "Brandy", "Lemon", "Flour"],
     image: "https://placehold.co/400x300?text=Saganaki",
+    tags: ["vegan", "gluten-free", "contains-nuts", "contains-gluten"],
   },
   {
     id: 10,
@@ -154,8 +130,8 @@ export const dishesArray = [
     description:
       "Greek Lemon Chicken is a flavorful dish featuring roasted chicken with a lemon and oregano marinade. It's typically served with roasted potatoes, creating a harmonious blend of citrusy and savory flavors.",
     price: 16.99,
-    tags: ["lactose-free", "contains-gluten"],
     ingredients: ["Chicken", "Lemon", "Oregano", "Potatoes"],
     image: "https://placehold.co/400x300?text=Greek+Lemon+Chicken",
+    tags: ["lactose-free", "contains-gluten"],
   },
 ];

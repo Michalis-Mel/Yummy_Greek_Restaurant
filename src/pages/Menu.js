@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { dishesArray } from "../db.js";
+import Filters from "../components/Filters.js";
 
 function Menu({ addOrder }) {
+  const [menu, setMenu] = useState(dishesArray);
+
   return (
     <div className="menu">
       <div className="row">
         <h1>Our Menu</h1>
         <div className="dishes">
-          {dishesArray.map((dish) => (
+          <Filters menu={menu} setMenu={setMenu} />
+          {menu.map((dish) => (
             <div className="dish" key={dish.id}>
               <div className="dish_con">
                 <img src={dish.image} alt={dish.name} />

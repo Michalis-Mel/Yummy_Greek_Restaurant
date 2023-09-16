@@ -28,19 +28,12 @@ const DishDetails = ({ addOrder }) => {
               <li key={ingredient}>{ingredient}</li>
             ))}
           </ul>
-          {(dish.tags.dietaryPreferences || dish.tags.allergens) && (
+          {dish.tags && (
             <div className="more_info">
               <h4>More Information</h4>
               <ul>
-                {dish.tags.dietaryPreferences
-                  ? dish.tags.dietaryPreferences.map((pref) => (
-                      <li key={pref}>{pref}</li>
-                    ))
-                  : ""}
-                {dish.tags.allergens
-                  ? dish.tags.allergens.map((allergy) => (
-                      <li key={allergy}>{allergy}</li>
-                    ))
+                {dish.tags
+                  ? dish.tags.map((pref) => <li key={pref}>{pref}</li>)
                   : ""}
               </ul>
             </div>
