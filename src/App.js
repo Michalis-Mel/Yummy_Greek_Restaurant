@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { dishesArray } from "./db";
 
 //import components
@@ -45,6 +45,10 @@ function App() {
         <Route
           path="/"
           exact
+          element={<Navigate to="/Yummy_Greek_Restaurant" />}
+        />
+        <Route
+          path="/Yummy_Greek_Restaurant"
           element={<Menu setAdded={setAdded} addOrder={addOrder} />}
         />
         <Route
