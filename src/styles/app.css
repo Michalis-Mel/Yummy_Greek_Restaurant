@@ -471,7 +471,7 @@ header .row .head_link.active::after {
 }
 @media only screen and (max-width: 400px) {
   .menu .row .dishes .dish {
-    padding: 10px 0;
+    padding: 10px 0 !important;
     flex: 0 0 100%;
     width: 100%;
   }
