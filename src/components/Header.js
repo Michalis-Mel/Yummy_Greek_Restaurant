@@ -10,14 +10,14 @@ const Header = () => {
     <header>
       <nav className="row">
         <NavLink
-          to="/"
+          to="/Yummy_Greek_Restaurant"
           className={`head_link ${hovered1 ? "active" : ""}`}
           onMouseEnter={() => setHovered1(!hovered1)}
           onMouseLeave={() => setHovered1(!hovered1)}
         >
           MENU
         </NavLink>
-        <NavLink className="logo" to="/">
+        <NavLink className="logo" to="/Yummy_Greek_Restaurant">
           <img src={logo} alt="Logo" />
         </NavLink>
         <NavLink

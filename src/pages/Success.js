@@ -9,7 +9,7 @@ const Success = () => {
         <h1>
           Your order has been successfully placed. <br /> Thank you!
         </h1>
-        <NavLink to="/">Back to the menu</NavLink>
+        <NavLink to="/Yummy_Greek_Restaurant">Back to the menu</NavLink>
       </div>
     </div>
   );

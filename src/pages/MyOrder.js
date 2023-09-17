@@ -41,7 +41,7 @@ const MyOrder = ({ order, setOrder }) => {
             You haven't added anything to your order yet!
           </h2>
         )}
-        <NavLink to="/" className="back">
+        <NavLink to="/Yummy_Greek_Restaurant" className="back">
           Back
         </NavLink>
       </div>

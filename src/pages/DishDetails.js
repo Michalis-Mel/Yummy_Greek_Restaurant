@@ -42,7 +42,7 @@ const DishDetails = ({ setAdded, addOrder }) => {
             <button onClick={() => addOrder(dish.id)} className="add">
               Add to your order
             </button>
-            <NavLink to="/" className="back">
+            <NavLink to="/Yummy_Greek_Restaurant" className="back">
               Back
             </NavLink>
           </div>
