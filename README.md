@@ -1,7 +1,8 @@
 # Yummy Greek Restaurant
 
 Welcome to the Yummy Greek Restaurant GitHub repository! This repository contains the source code and documentation for our restaurant website/application.
-You can see the live version of the app here [here](https://michalis-mel.github.io/Yummy_Greek_Restaurant/)
+
+You can see the live version of the app [here](https://michalis-mel.github.io/Yummy_Greek_Restaurant/).
 
 ## Table of Contents
 
