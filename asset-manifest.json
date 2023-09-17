@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Yummy_Greek_Restaurant/static/css/main.e6e08074.css",
-    "main.js": "/Yummy_Greek_Restaurant/static/js/main.cf201408.js",
+    "main.css": "/Yummy_Greek_Restaurant/static/css/main.2a37145b.css",
+    "main.js": "/Yummy_Greek_Restaurant/static/js/main.6648d9ef.js",
     "static/media/Text-light.ttf": "/Yummy_Greek_Restaurant/static/media/Text-light.d96bb2f98cb3d0d8ee06.ttf",
     "static/media/Text-normal.ttf": "/Yummy_Greek_Restaurant/static/media/Text-normal.613585db06f849ca7717.ttf",
     "static/media/logo-transparent.png": "/Yummy_Greek_Restaurant/static/media/logo-transparent.917552d8155d949ab5e2.png",
     "static/media/Titles.ttf": "/Yummy_Greek_Restaurant/static/media/Titles.109a10dca0508e41aa12.ttf",
     "index.html": "/Yummy_Greek_Restaurant/index.html",
-    "main.e6e08074.css.map": "/Yummy_Greek_Restaurant/static/css/main.e6e08074.css.map",
-    "main.cf201408.js.map": "/Yummy_Greek_Restaurant/static/js/main.cf201408.js.map"
+    "main.2a37145b.css.map": "/Yummy_Greek_Restaurant/static/css/main.2a37145b.css.map",
+    "main.6648d9ef.js.map": "/Yummy_Greek_Restaurant/static/js/main.6648d9ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6e08074.css",
-    "static/js/main.cf201408.js"
+    "static/css/main.2a37145b.css",
+    "static/js/main.6648d9ef.js"
   ]
 }
