@@ -9,6 +9,12 @@ const MyOrder = ({ order, setOrder }) => {
 
         {order[0] ? (
           <>
+            <div className="delete_con">
+              <button onClick={() => setOrder([])} className="delete">
+                Delete Order
+                <img src={trash} alt="Delete" />
+              </button>
+            </div>
             <ul>
               {order.map((food) =>
                 food.map((food1) => (
@@ -20,10 +26,15 @@ const MyOrder = ({ order, setOrder }) => {
                 ))
               )}
             </ul>
-            <button onClick={() => setOrder([])} className="delete">
-              Delete Order
-              <img src={trash} alt="Delete" />
-            </button>
+            <div className="order_con">
+              <NavLink
+                to="/success"
+                onClick={() => console.log(order)}
+                className="order"
+              >
+                Order
+              </NavLink>
+            </div>
           </>
         ) : (
           <h2 className="empty">

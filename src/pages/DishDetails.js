@@ -3,7 +3,7 @@ import { useParams, NavLink } from "react-router-dom";
 
 import { dishesArray } from "../db.js";
 
-const DishDetails = ({ addOrder }) => {
+const DishDetails = ({ setAdded, addOrder }) => {
   const url = useParams();
   const [dish, setDish] = useState(dishesArray[0]);
   const [dishes] = useState(dishesArray);

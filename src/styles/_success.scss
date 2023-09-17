@@ -1,0 +1,30 @@
+.successPage .row {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  img {
+    width: 120px;
+    font-size: 0;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+    line-height: 38px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 50px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
