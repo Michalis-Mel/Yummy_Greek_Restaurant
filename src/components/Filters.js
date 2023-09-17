@@ -19,6 +19,7 @@ const Filters = ({ menu, setMenu }) => {
   //Activate the filter that is clicked
   function addFilter(e) {
     const filterBtns = document.querySelectorAll(".filterBtn");
+    const allBtn = document.querySelector(".showAll");
 
     if (e.target.id.includes("priceSelect")) {
       const priceArr = [];
@@ -107,12 +108,21 @@ const Filters = ({ menu, setMenu }) => {
         setMenu(menuCopy);
       }
     } else {
-      filterBtns.forEach((btn) => {
-        [...btn.parentElement.children].forEach((sib) =>
-          sib.classList.remove("active")
-        );
-        e.target.classList.add("active");
-      });
+      if (e.target.classList.contains("active")) {
+        filterBtns.forEach((btn) => {
+          [...btn.parentElement.children].forEach((sib) =>
+            sib.classList.remove("active")
+          );
+          allBtn.classList.add("active");
+        });
+      } else {
+        filterBtns.forEach((btn) => {
+          [...btn.parentElement.children].forEach((sib) =>
+            sib.classList.remove("active")
+          );
+          e.target.classList.add("active");
+        });
+      }
     }
     const priceArr = [];
     const finalPriceArray = [];
