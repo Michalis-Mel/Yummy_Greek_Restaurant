@@ -45,3 +45,39 @@ header .row {
     left: 0;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  header .row {
+    height: 150px;
+    .logo {
+      max-width: 130px;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  header .row {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header .row {
+    height: 120px;
+    .logo {
+      max-width: 100px;
+    }
+    .head_link {
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .row {
+    height: 90px;
+    .logo {
+      max-width: 80px;
+    }
+    .head_link {
+      font-size: 18px;
+    }
+  }
+}

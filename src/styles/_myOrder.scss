@@ -110,3 +110,46 @@
     }
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .myOrder .row h1 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .myOrder .row {
+    h1 {
+      font-size: 26px;
+    }
+    ul li {
+      img {
+        max-width: 130px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .order_con {
+      justify-content: center;
+    }
+
+    a.back {
+      margin: 30px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .myOrder .row {
+    .delete_con button.delete {
+      font-size: 0;
+      img {
+        margin: 0;
+      }
+    }
+    ul li img {
+      max-width: 100px;
+    }
+  }
+}

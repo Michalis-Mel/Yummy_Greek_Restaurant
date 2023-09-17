@@ -139,6 +139,41 @@ header .row .head_link.active::after {
   left: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  header .row {
+    height: 150px;
+  }
+  header .row .logo {
+    max-width: 130px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  header .row {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header .row {
+    height: 120px;
+  }
+  header .row .logo {
+    max-width: 100px;
+  }
+  header .row .head_link {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .row {
+    height: 90px;
+  }
+  header .row .logo {
+    max-width: 80px;
+  }
+  header .row .head_link {
+    font-size: 18px;
+  }
+}
 .menu .row {
   flex-flow: column nowrap;
   align-items: center;
@@ -344,11 +379,109 @@ header .row .head_link.active::after {
   color: var(--light);
 }
 
+@media only screen and (max-width: 1500px) {
+  .menu .row .dishes .dish {
+    flex: 0 0 33.3%;
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .menu .row h1 {
+    font-size: 32px;
+  }
+  .menu .row h2 {
+    font-size: 28px;
+  }
+  .menu .row .dishes .filters {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+  .menu .row .dishes .filters .priceBox {
+    margin-top: 10px;
+  }
+  .menu .row .dishes .filters .filterBox {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  .menu .row .dishes .filters .filterBox button {
+    white-space: nowrap;
+  }
+  .menu .row .dishes .dish {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .menu .row .dishes .dish .dish_con .all_info .dish_info {
+    flex-flow: column nowrap;
+    justify-content: unset;
+  }
+  .menu .row .dishes .dish .dish_con .all_info .dish_info h3 {
+    margin-bottom: 10px;
+  }
+  .menu .row .dishes .dish .dish_con .all_info .dish_links {
+    flex-flow: column nowrap;
+    justify-content: unset;
+  }
+  .menu .row .dishes .dish .dish_con .all_info .dish_links .more {
+    margin: 0 auto 20px auto;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .menu .row .dishes .dish {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .menu .row h1 {
+    font-size: 26px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .menu .row h2 {
+    font-size: 26px;
+  }
+  .menu .row .dishes .filters {
+    padding: 0;
+  }
+  .menu .row .dishes .dish {
+    padding: 10px 0;
+  }
+  .menu .row .dishes .dish:nth-child(even) {
+    padding-right: 10px;
+  }
+  .menu .row .dishes .dish:nth-child(odd) {
+    padding-left: 10px;
+  }
+  .menu .row .dishes .dish .dish_con .all_info {
+    padding: 20px 10px;
+  }
+  .menu .row .dishes .dish .dish_con .all_info .dish_info h3 {
+    font-size: 20px;
+  }
+  .menu .row .dishes .dish .dish_con .all_info .dish_info strong {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menu .row .dishes .dish {
+    padding: 10px 0;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
 .dishDetails .row {
   flex-flow: row nowrap;
   align-items: flex-start;
   justify-content: space-between;
   max-width: 1400px;
+  margin-bottom: 40px;
 }
 .dishDetails .row img {
   font-size: 0;
@@ -426,6 +559,45 @@ header .row .head_link.active::after {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1200px) {
+  .dishDetails .row {
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .dishDetails .row {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .dishDetails .row img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .dishDetails .row .dishInfo {
+    flex: unset;
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .dishDetails .row .dishInfo .dishDetails_links {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: unset;
+  }
+  .dishDetails .row .dishInfo .dishDetails_links .add {
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .dishDetails .row .dishInfo h1 {
+    font-size: 30px;
+  }
+  .dishDetails .row .dishInfo h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
 .myOrder .row {
   flex-flow: column nowrap;
   align-items: center;
@@ -485,7 +657,7 @@ header .row .head_link.active::after {
   box-sizing: border-box;
   border: 3px solid var(--light);
   font-size: 24px;
-  font-family: "text-normal", sans-serif;
+  font-family: "title", sans-serif;
   border-radius: 20px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -534,6 +706,39 @@ header .row .head_link.active::after {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1200px) {
+  .myOrder .row h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .myOrder .row h1 {
+    font-size: 26px;
+  }
+  .myOrder .row ul li img {
+    max-width: 130px;
+  }
+  .myOrder .row ul li h2 {
+    font-size: 20px;
+  }
+  .myOrder .row .order_con {
+    justify-content: center;
+  }
+  .myOrder .row a.back {
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .myOrder .row .delete_con button.delete {
+    font-size: 0;
+  }
+  .myOrder .row .delete_con button.delete img {
+    margin: 0;
+  }
+  .myOrder .row ul li img {
+    max-width: 100px;
+  }
+}
 .successPage .row {
   flex-flow: column nowrap;
   align-items: center;
@@ -560,4 +765,14 @@ header .row .head_link.active::after {
 }
 .successPage .row a:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 550px) {
+  .successBox {
+    padding: 30px;
+  }
+  .successBox .sucCon h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=app.css.map */

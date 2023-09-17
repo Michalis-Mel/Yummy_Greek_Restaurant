@@ -110,3 +110,13 @@ body {
 @import "./dishDetails";
 @import "./myOrder";
 @import "./success";
+
+@media only screen and (max-width: 550px) {
+  .successBox {
+    padding: 30px;
+    .sucCon h4 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

@@ -228,3 +228,119 @@
     }
   }
 }
+
+@media only screen and (max-width: 1500px) {
+  .menu .row .dishes .dish {
+    flex: 0 0 33.3%;
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .menu .row {
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .dishes {
+      .filters {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 0 10px;
+
+        .priceBox {
+          margin-top: 10px;
+        }
+        .filterBox {
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: flex-start;
+          overflow-x: auto;
+          padding-bottom: 10px;
+
+          button {
+            white-space: nowrap;
+          }
+        }
+      }
+      .dish {
+        padding: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .menu .row .dishes .dish .dish_con .all_info {
+    .dish_info {
+      flex-flow: column nowrap;
+      justify-content: unset;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+    .dish_links {
+      flex-flow: column nowrap;
+      justify-content: unset;
+      .more {
+        margin: 0 auto 20px auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .menu .row .dishes .dish {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .menu .row {
+    h1 {
+      font-size: 26px;
+      text-align: center;
+      margin: 30px auto;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    .dishes {
+      .filters {
+        padding: 0;
+      }
+      .dish {
+        padding: 10px 0;
+
+        &:nth-child(even) {
+          padding-right: 10px;
+        }
+        &:nth-child(odd) {
+          padding-left: 10px;
+        }
+
+        .dish_con .all_info {
+          padding: 20px 10px;
+
+          .dish_info {
+            h3 {
+              font-size: 20px;
+            }
+            strong {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menu .row .dishes .dish {
+    padding: 10px 0;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}

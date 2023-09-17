@@ -15,7 +15,7 @@ const Header = () => {
           onMouseEnter={() => setHovered1(!hovered1)}
           onMouseLeave={() => setHovered1(!hovered1)}
         >
-          MENU
+          OUR MENU
         </NavLink>
         <NavLink className="logo" to="/Yummy_Greek_Restaurant">
           <img src={logo} alt="Logo" />
