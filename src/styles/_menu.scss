@@ -48,9 +48,11 @@
         font-family: "text-light", sans-serif;
         transition: all 0.2s ease-in-out;
 
-        &:hover {
-          background: var(--light);
-          color: var(--dark);
+        @media only screen and (min-width: 550px) {
+          &:hover {
+            background: var(--light);
+            color: var(--dark);
+          }
         }
       }
       button.active {
@@ -92,6 +94,7 @@
             font-size: 18px;
             line-height: 17px;
             color: #000000;
+            appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
             text-overflow: "";
